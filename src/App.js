@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 import {Grid,Row,Col} from 'react-bootstrap';
-import './App.css';
+
 import Box from './Components/box';
 class App extends Component {
   render() {
+    const Appheader ={
+      backgroundcolor:'pink',
+      height :1 ,
+      padding: 20 ,
+      color: 'white'
+    }
+    const h={
+      color:'rgb(150, 147, 147)',
+    fontsize: 40 ,
+    }
+    
     return (
       <Grid>
   <Row>
   
       <div className="App">
-        <header className="App-header"></header>
+        <header style={Appheader}></header>
         
-        <h1 className="App-title">Notre équipe</h1>
+        <h1 style={h}>Notre équipe</h1>
       <div>
       <Col xs={6} md={3}>
       <Box  img=".\res/image1.jpg" name='yahya bouhlel' des1="Founder" des2="CEO"/>
@@ -30,7 +41,7 @@ class App extends Component {
       </Col>
       </div>
      
-       <header className="App-header"></header>
+       <header style={Appheader}></header>
  </div>
  </Row>
  </Grid>
